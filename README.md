@@ -1,4 +1,4 @@
-shiva-ruby
+Info-sec
 ==========
 
-a ruby based vulnerability assessment and exploitation framework
+First Try
