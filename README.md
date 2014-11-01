@@ -1,4 +1,5 @@
 Info-sec
 ==========
 
-First Try
+Collection of scripts for solving different info-sec problems.
+
