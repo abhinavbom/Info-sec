@@ -39,14 +39,14 @@ def robotsParse(site):
         return
 
 
-for i in range(0,1):
+for i in range(0,5):        #20 URLs per page. You can change the range to parse more websites
     url = 'http://www.alexa.com/topsites/global;'+str(i)
     print "opening url %s", url
     print "========================================================="
     print "========================================================="
     html = urllib2.urlopen(url)
     soup=BeautifulSoup(html,"lxml")
-    table=soup.find('section',{"class":"td col-r"})
+    table=soup.find('section',{"class":"td col-r"}) #class defining location of urls
 #    print table
     div_search=table.findAll('div',{"class":"desc-container"})
 #    print div_search
