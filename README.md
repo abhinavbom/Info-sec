@@ -3,6 +3,8 @@ Info-sec
 
 Collection of scripts for solving different info-sec problems.
 
+Alexa-parser.py
+
 BlindSQLi.py - Script enables blind sql injection on any form field in a webpage.
 
 DVWA-auto.py - This script is under development to automate the steps of Damn Vulnerable Web Application(DVWA - http://www.dvwa.co.uk/). As of now it succesfully clears Sqli and XSS.
