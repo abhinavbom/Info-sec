@@ -83,15 +83,11 @@ for line in f.readlines():
     else:
         print "SQL injection succeeded for %s", line
         print "---------------------SUCCESS---------------"
-
-
-#html = br1.response().read()
-#bs = BeautifulSoup(html)
-
-#IDs = bs.find_all('div', {'class' : 'vulnerable_code_area'})
-
-#for ID in IDs[0].find_all('pre'):
-#   print ID
+        html = br1.response().read()
+        bs = BeautifulSoup(html)
+        IDs = bs.find_all('div', {'class' : 'vulnerable_code_area'})
+        for ID in IDs[0].find_all('pre'):
+            print ID
 
 
 
