@@ -31,7 +31,7 @@ br1.set_handle_robots(False)
 # User-Agent
 br1.addheaders = [('User-agent', 'Firefox/3.0.1')]
 
-print('browser 1:')
+print('browser 1')
 br1.open('http://127.0.0.1/DVWA-1.0.8/')
 for form in br1.forms():
     print form
