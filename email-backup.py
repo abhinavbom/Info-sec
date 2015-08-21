@@ -3,10 +3,9 @@
 # Purpose:      This script can help you in creating a local backup of your emails
 #               You can create a local backup from email services like gmail and yahoo
 #
-# Author:      darklord
+# Author:      @abhinavbom
 #
 # Created:     01/11/2014
-# Copyright:   (c) darklord 2014
 # Licence:     MIT
 #-------------------------------------------------------------------------------
 
