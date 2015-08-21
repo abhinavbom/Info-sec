@@ -1,11 +1,10 @@
 #-------------------------------------------------------------------------------
 # Name:        Blind SQL injection
-# Purpose:
+# Purpose:      Performs a blind SQLi on the target.
 #
-# Author:      darklord
+# Author:      @abhinavbom
 #
 # Created:     11/10/2014
-# Copyright:   (c) darklord 2014
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
