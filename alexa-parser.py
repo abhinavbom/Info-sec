@@ -3,10 +3,9 @@
 # Purpose:      Following scripts parse Alexa.com for top 100 websites and cralws their robots.txt
 #               to figure out what all directories are disabled in top websites
 #               The result is stored in a textfile.
-# Author:      darklord
+# Author:      @abhinavbom
 #
 # Created:     04/11/2014
-# Copyright:   (c) darklord 2014
 # Licence:     MIT
 #-------------------------------------------------------------------------------
 
