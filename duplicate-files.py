@@ -2,10 +2,9 @@
 # Name:        Duplicate-file.py
 # Purpose:      This script helps in identifying duplicate files in a given directory
 #               It will go through all the respective subdirectories to compare the files
-# Author:      darklord
+# Author:      @abhinavbom
 #
 # Created:     07/11/2014
-# Copyright:   (c) darklord 2014
 # Licence:     MIT
 #-------------------------------------------------------------------------------
 import sys
