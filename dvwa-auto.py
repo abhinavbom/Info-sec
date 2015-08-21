@@ -2,11 +2,10 @@
 # Name:        module1
 # Purpose:      DVWA SQL Injection automation script
 #
-# Author:      darklord
+# Author:      @abhinavbom
 #
 # Created:     08/07/2014
-# Copyright:   (c) darklord 2014
-# Licence:     <your licence>
+# Licence:     MIT
 #-------------------------------------------------------------------------------
 
 import mechanize
