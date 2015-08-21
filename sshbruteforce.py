@@ -2,10 +2,9 @@
 # Name:        SSH-BruteForce
 # Purpose:      Following script will bruteforce SSH login using Paramiko
 #               http://www.paramiko.org/en/latest/
-# Author:      darklord
+# Author:      @abhinavbom
 #
 # Created:     19/10/2014
-# Copyright:   (c) darklord 2014
 # Licence:     MIT
 #-------------------------------------------------------------------------------
 
